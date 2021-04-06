@@ -19,3 +19,7 @@ Aqui você encontrará cases utilizados em nossos processos seletivos.
 - Defina um code **style guide**, exponha sua decisão e a siga. Utilize ferramentas automátizadas para te ajudar com isso;
 - Testes automatizados são importantes, defina um ambiente de testes devidamente configurado e escreva os _test cases_ baseado no seu desafio;
 - Não faça alterações no projeto após a submissão ou a data limite;
+
+## Pontos específicos 🎯
+
+- Utilize algum mecanismo de coleta de logs de sua preferência que registre os eventos ocorridos durante a execução da aplicação.
