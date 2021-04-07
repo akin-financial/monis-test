@@ -23,6 +23,7 @@ Na Monis nós trabalhamos com _user story_ para definir as melhorias do nosso pr
 - O card deve ter a funcionalidade de esconder e exibir os valores;
 - O card deve ter como default os valores escondidos;
 - Ao clicar em qualquer parte do card ele deve mudar o estado de exibição dos valores;
+- O estado de visível e não visível será útilizado em outras partes do app, implemente de uma forma reutilizável;
 
 ## Recursos
 
