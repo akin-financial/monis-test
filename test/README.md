@@ -1,27 +1,34 @@
-# Backend Engineer Test
+# Mobile Engineer Test
 
-Este repositório serve como case para avaliação técnica para a posição de backend
+Este repositório serve como case para avaliação técnica para a posição de mobile
 
 ## Case
 
 Na Monis nós trabalhamos com _user story_ para definir as melhorias do nosso produto; Este case é um exemplo de um card com uma "nova feature" para o nosso produto. Você reescreverá "parte" do nosso sistema 😁
 
-### Story #: Criar uma API para calculo de saldo dos usuários Monis
+### Story #: Criar card de saldo do usuário
 
 **Notas**:
 
-- Nossos usuários possuem assinaturas que são debitadas semanalmente de seus cartões de crédito;
-- Essas assinaturas são armazenadas como _transações_ em nosso banco de dados;
-- Todas as transações rendem 100% do [CDI](https://www.infomoney.com.br/guias/cdi/) (Este link leva à um artigo explicando sobre CDI);
-- Cada transação começa a render assim que ela é concluída até a data atual;
-- Os rendimentos são diários;
-- Existe uma API do [Banco Central](https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json) para pegar as taxas de cada dia;
+- Nossos usuários possuem assinaturas que debitam semanalmente de seus cartões de crédito;
+- Esses débitos compoem o saldo do usuário;
+- Cada débito tem um rendimento de 100% do CDI;
 
 **Critérios de Aceite**
 
-- Não se preocupar com autenticação, foque apenas na regra de negócio (Calcular o saldo atual);
-- Deve haver um endpoint para "calcular" o saldo atual do usuário;
-- O endpoint de calculo deve trazer em detalhes: saldo atual (total em transações + rendimentos), total em transações e somente rendimento;
-- Deve haver um endpoint para "calcular" o rendimento de apenas uma transação;
-- Cada transação deve render desda data em que foi criada até a data de hoje;
-- Utilizar `transactions.json` como referência de banco de dados de transação;
+- Não se preocupe em ser _pixel perfect_, o objetivo é avaliar código e organização, fique a vontade para mudar cores, fonts e etc;
+- O card deve ser acompanhado de uma saudação + primeiro nome do usuário;
+- O card deve exibir o saldo em BRL;
+- O card deve exibir qual o valor semanal da assinatura;
+- O card deve ter a funcionalidade de esconder e exibir os valores;
+- O card deve ter como default os valores escondidos;
+- Ao clicar em qualquer parte do card ele deve mudar o estado de exibição dos valores;
+
+## Recursos
+
+- Utilize o `balance.json` como mock de dados;
+- Para referência foi usada a fonte WorkSans (Google Fonts);
+- Exemplo de card com valores visíveis:  
+  ![Toogled On](./toggle-on-card.png)
+- Exemplo de card com valores não visíveis:  
+  ![Toggled Off](./toggle-off-card.png)
